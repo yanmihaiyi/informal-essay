@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>我的第一段 JavaScript</h1>
+  <script>
+    function myFunction2() {
+      alert("My First JavaScript");
+    }
+  </script>
+  <button type="button" onclick="myFunction2()">提示</button>
+  <p id="demo">
+    JavaScript 能改变 HTML 元素的样式。
+  </p>
+
+  <script>
+    function myFunction() {
+      x = document.getElementById("demo") // 找到元素
+      if (x.style.color == "rgb(255,182,193)") {
+        x.style.color = "#ff0000"
+      } else {
+        x.style.color = "#FFB6C1"          // 改变样式
+      }
+    }
+  </script>
+  <button type="button" onclick="myFunction()">点击这里</button>
+
+  <p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+
+  <p><input id="demo1" type="text"></p>
+  <script>
+    function myFunction1() {
+      var x = document.getElementById("demo1").value;
+      if (x == "" || isNaN(x)) {
+        alert("Not Numeric");
+      }
+    }
+  </script>
+
+  <button type="button" onclick="myFunction1()">点击这里</button>
+
+  <script>
+    document.write("<p> 使用js输入信息 </p>")
+  </script>
+
+</body>
+
+</html>

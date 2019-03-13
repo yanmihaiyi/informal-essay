@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>登录</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href=''>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="user-scalable=no, width=360">
+  <!--IOS设备上禁止将数字识别为可点击的tel link-->
+  <meta content="telephone=no" name="format-detection">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="../../static/css/base.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="login-container">
+      <!-- logo -->
+      <img class="login-container-logo" src="images/logo.png" alt="">
+      <!-- logo -->
+      <!-- title -->
+      <p class="font-normal color-level-1 font-bold text-center margin-top font-large">AI让顾客更幸福</p>
+      <!-- title -->
+      <!-- input-tel -->
+      <div class="padding-horizontal default-item margin-bottom mv-item margin-top40 line-bottom tel-box">
+        <input class="login-input need-clear padding-left29 font-normal" type="number" onkeyup="this.value=this.value.slice(0,20)" name="telephone" value="" id="telephone" placeholder="请输入手机号">
+        <img class="mv-clear" src="images/clear.png" alt="">
+      </div>
+      <!-- input-tel -->
+      <!-- input-pwd -->
+      <div class="padding-horizontal default-item margin-bottom mv-item margin-top20 line-bottom code-box">
+        <input class="login-input padding-left29 font-normal"  onkeyup="this.value=this.value.replace(/[\u4e00-\u9fa5]/g,'')" type="password" value="" name="pwd" id="pwd" placeholder="请输入密码">
+        <img class="mv-eyes" data-state="on" src="images/eye1.png" alt="">
+      </div>
+      <!-- input-pwd -->
+      <!-- forget pwd -->
+      <span class="font-small margin-top color-level-3 text-right padding-right18 forgetPw" data-href="pages/forgetPw/index.html" data-fullView="true" data-title="忘记密码">忘记密码</span>
+      <div class="clearfix"></div>
+      <!-- forget pwd -->
+      <!-- submit -->
+      <div id="login" class="bg-cmain default-item has-radius color-level-1 text-center margin-top">登录</div>
+      <div class="login-protocol margin-top active">已阅读并同意<span class="color-main" data-title="用户协议及隐私条款" data-href="pages/userAgreement/index.html">《用户协议》</span></div>
+      <!-- submit -->
+      <p class="login-container-copyright text-center font-small color-level-3">南京甄视智能科技有限公司</p>
+    </section>
+  <script src="../../cordova.js" charset="utf-8"></script>
+  <script src="../../static/public/zepto.min.js" charset="utf-8"></script>
+  <script src="../../static/js/apiConfig.js" charset="utf-8"></script>
+  <script src="../../static/js/base.js" charset="utf-8"></script>
+  <script src="../../static/js/md5.js" charset="utf-8"></script>
+  <script src="index.js"></script>
+</body>
+</html>

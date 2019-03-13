@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/aschool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aschool"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bschool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bschool"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转网页"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/turnToNewActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转网页"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/showDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/blue_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙连接测试"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/change_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换图标颜色"
+        android:textSize="16sp"/>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
