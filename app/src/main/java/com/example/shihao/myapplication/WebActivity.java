@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -31,6 +32,12 @@ public class WebActivity extends Activity{
                 pressedBack();
             }
         });
+        WebSettings webSettings = webView.getSettings();
+
+        // 设置与Js交互的权限
+        webSettings.setJavaScriptEnabled(true);
+        // 设置允许JS弹窗
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webView.setWebViewClient(new WebViewClient(){
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
