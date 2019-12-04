@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import com.blakequ.bluetooth_manager_lib.BleManager;
 import com.blakequ.bluetooth_manager_lib.connect.multiple.MultiConnectManager;
+import com.blankj.utilcode.util.ToastUtils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -35,7 +36,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * @date: 2019/12/4
+ * @author shihao
+ */
 public class BlueMainActivity extends Activity {
     private static final String TAG = "BlueMainActivity";
     private List<String> address;
@@ -45,7 +49,10 @@ public class BlueMainActivity extends Activity {
     private BluetoothAdapter mBluetoothAdapter;
     private BroadcastReceiver mBroadcastReceiver;
     private ResultListAdapter mResultListAdapter;
-    MultiConnectManager multiConnectManager;  //多设备连接
+    /**
+     * 多设备连接
+     */
+    MultiConnectManager multiConnectManager;
     public static Map<Integer, Boolean> map;
     public static List<Integer> p;
     Button scan;
@@ -99,7 +106,7 @@ public class BlueMainActivity extends Activity {
 
         // 检查设备上是否支持蓝牙
         if (mBluetoothAdapter == null) {
-            Toast.makeText(this, "设备不支持蓝牙", Toast.LENGTH_SHORT).show();
+            ToastUtils.showShort("设备不支持蓝牙");
             finish();
             return;
         }
